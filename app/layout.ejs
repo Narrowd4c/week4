@@ -1,26 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%- title %></title>
-  <link rel="stylesheet" href="./assets/style/all.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="眼鏡">
+    <meta name="author" content="眼鏡">
+    <meta property="og:title" content="glass" />
+    <meta property="og:description" content="glass">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://narrowd4c.github.io/week3/" />
+    <meta property="og:image" content="./assets/images/logo-white.png" />
+    <title> <%- title %> </title>
+    <link rel="shortcut icon" href="./assets/images/logo-white.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./assets/style/all.css">
 </head>
-
 <body>
-  <header class="header">
-    這是 header
-  </header>
-
-  <%- contents %>
-
-  <footer class="footer">
-    footer
-  </footer>
+    <header class="bg-primary text-white ">
+      <div class="container flex items-center justify-between ">
+      <h1  class="logo"><a href="./index.html"><img src="./assets/images/logo-white.png" alt="logo" ></a></h1>
+      <ul class="flex gap-16 text-white fs-5 d-sm-none py-25px">
+        <li><a href="#">系列鏡框</a></li>
+        <li><a href="#">門市據點</a></li>
+        <li><a href="#">部落格</a></li>
+        <li><a href="#">常見問題</a></li>
+      </ul>
+      <div class="btn-menu d-none d-sm-block " onclick="menuChange(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+       <ul class="menu fs-5">
+        <li><a href="#">系列鏡框</a></li>
+        <li><a href="#">門市據點</a></li>
+        <li><a href="#">部落格</a></li>
+        <li><a href="#">常見問題</a></li>
+      </ul>
+      </div>
+    </header>
+    <%- contents %>
+    <footer class="bg-primary text-white ">
+      <div class="container pt-15 py-sm-6">
+      <section class="flex justify-between border-white">
+      <div>
+        <ul class="flex gap-16 fs-4 d-sm-none mb-9">
+        <li><a href="#">系列鏡框</a></li>
+        <li><a href="#">門市據點</a></li>
+        <li><a href="#">部落格</a></li>
+        <li><a href="#">常見問題</a></li>
+      </ul>
+    <address class="fs-9 pb-8 fs-sm-4">
+      <div class="mb-2"><span class="material-symbols-outlined">call</span><a href="tel:+886-0800-000-000">0800-000-000</a></div>
+      <div><span class="material-symbols-outlined">mail</span><a href="mailto:glasses@business.co">glasses@business.com</a></div>
+    </address>
+    </div>
+    <ul class="social-icon_list flex gap-8 gap-sm-2">
+        <li><a href="#"><img src="./assets/images/ic-social-fb.png" alt="facebook"></a></li>
+        <li><a href="#"><img src="./assets/images/ic_social_ig.png" alt="instagram"></a></li>
+        <li><a href="#"><img src="./assets/images/ic_social_line.png" alt="line"></a></li>
+    </ul>
+  </section>
+    <div class="flex justify-between items-center py-8 pt-sm-6 pb-sm-4 d-sm-block">
+      <p class="mb-sm-2 font-roboto">Copyright © 2020 Glasses.All rights reserved.</p>
+      <div class="flex copyright gap-12 flex-sm-col gap-sm-2">
+        <a href="#">隱私權政策</a>
+        <a href="#">服務條款</a>
+      </div>
+    </div>
+    </div>
+    </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
-
 </html>

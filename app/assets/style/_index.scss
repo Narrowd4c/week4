@@ -1,0 +1,197 @@
+.banner{
+    background: url("../images/home-header.png") center/cover no-repeat;
+    height:100vh;
+}
+@media screen and (max-width:992px) {
+    .banner{
+        background:url("../images/home-header-sm.png") center/cover no-repeat;
+    }
+}
+@media screen and (max-width:767px) {
+    .banner{
+        height:396px;
+    }
+}
+.banner-content{ 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+}
+.btn-buy{
+    font-size: 20px;
+    padding: 6px 12px;
+    background: $primary;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    &:hover{
+        background:lighten($primary, 10);
+    }
+}
+.title{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+@media screen and (max-width:767px) {
+    .title{
+        font-size: 1.5rem;
+    }
+}
+.feature-item{
+   flex:1 0 0px;
+   text-align: center;
+    img{
+        width: 100px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    h3{
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+    p{
+        text-align: left;
+        color: #000;
+    }
+}
+@media screen and (max-width:992px){
+    .feature-item{
+       flex:1 0 336px;
+    }
+}
+.series{
+    flex:1 0 0px;
+    &:hover{
+        opacity: 0.8;
+    }
+    a{
+        display: block;
+        font-weight: 900;
+        font-size: 48px;
+        font-style: italic;
+        font-family: Roboto;
+        &:hover{
+            text-decoration: none;
+            color:lighten($primary, 10);
+        }
+    }
+}
+@media screen and (max-width:992px){
+    .series{
+        img{
+            display: block;
+            width: 336px;
+        }
+    }
+}
+.co-branding{
+    background: url("../images/index-bg.png") center/cover no-repeat;
+}
+.co-branding-item{
+    p{
+        background: #fff;
+        color: $primary;
+        font-weight: 900;
+        font-size: 3rem;
+        padding: 8px;
+        font-family: Roboto;
+        font-style: italic;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .co-branding{
+    background: url("../images/index-bg-sm.png") center/cover no-repeat;
+    }
+    .co-branding-item{
+        margin-left: auto;
+        margin-right:auto;
+        max-width: 696px;
+    }
+}
+
+.customer{
+   width: calc(25% - 24px);
+   display: flex;
+   flex-direction: column;
+    box-shadow: 0px 2px 6px #00000029;
+    
+}
+.customer-card{
+    padding: 4px;
+    height: 205px;
+    display: flex;
+    flex-direction: column;
+    .name{
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+    .date{
+        margin-top: auto;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:992px) {
+    .customer{
+        width: calc(50% - 24px);;
+    }
+}
+@media screen and (max-width:767px) {
+    .customer{
+        width: calc(100% - 24px);
+    }
+}
+
+.input-container{
+   max-width: 636px;
+   margin-left: auto;
+   margin-right: auto;
+   input[type="text"],textarea{
+       display: block;
+       width: 100%;
+       padding: 6px 12px;
+       margin-bottom: 1rem;
+       margin-top: 0.5rem;
+       background: inherit;
+       border: 1px solid #000;
+       font-size: 1rem;
+       line-height: 1.5;
+   }
+   input[type="checkbox"]{
+        width: 16px;
+        height: 16px;
+        margin: 4px;
+   }
+   input[type="button"]{
+       width: 416px;
+        display: block;
+       border: none;
+       cursor: pointer;
+       line-height: 1.5;
+       &:hover{
+           background:lighten($primary, 10);
+       }
+   }
+}
+@media screen and  (max-width:992px){
+    .input-container{
+        max-width: 576px;
+        input[type="button"]{
+            width: 336px;
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    .input-container{
+        padding-left: 13px;
+        padding-right: 14px;
+        input[type="button"]{
+       width: 100%;
+    }
+    }
+    
+}
