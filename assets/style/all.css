@@ -79,12 +79,6 @@ button {
   border: none;
 }
 
-header {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-}
-
 .logo {
   width: 80px;
   height: auto;
@@ -166,7 +160,7 @@ header {
 }
 .banner {
   background: url("../images/home-header.png") center/cover no-repeat;
-  height: 100vh;
+  height: calc(100vh - 80px);
 }
 
 @media screen and (max-width: 992px) {
@@ -210,7 +204,7 @@ header {
   }
 }
 .feature-item {
-  flex: 1 0 0px;
+  flex: 1 1 0%;
   text-align: center;
 }
 .feature-item img {
@@ -362,6 +356,100 @@ header {
     width: 100%;
   }
 }
+.navbar li {
+  flex: 1 1 0px;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  border-right: 1px solid #DCDCDC;
+  border-bottom: 0.5rem solid transparent;
+  cursor: pointer;
+}
+.navbar li:first-child {
+  border-left: 1px solid #DCDCDC;
+}
+.navbar li a {
+  text-decoration: none;
+}
+.navbar li:hover {
+  border-bottom: 0.5rem solid #AA0601;
+}
+
+.glass-card {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  margin-right: -12px;
+  margin-left: -12px;
+  justify-content: center;
+}
+.glass-card li {
+  width: calc(25% - 1.5rem);
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .glass-card {
+    gap: 2.5rem 1.5rem;
+  }
+  .glass-card li {
+    width: calc(50% - 1.5rem);
+    margin-bottom: 2.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .glass-card {
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  .glass-card li {
+    gap: none;
+    width: 100%;
+    max-width: 638px;
+  }
+}
+.color-select {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.glass-color1 {
+  background: #5F3E2D;
+}
+
+.glass-color2 {
+  background: #B75929;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination li a {
+  display: block;
+  padding: 10px 11px 10px;
+  font-size: 19px;
+  line-height: 26px;
+  border: 1px solid #555555;
+}
+.pagination li a:not(:first-child) {
+  border-right: 0px;
+}
+.pagination li a:hover {
+  text-decoration: none;
+  background: #F2F2F2;
+}
+.pagination .page a {
+  padding: 11px 15px 11px 15px;
+  font-size: 18px;
+  line-height: 24px;
+}
+.pagination .page a:hover {
+  color: white;
+  background: #000;
+}
+
 .container {
   max-width: 1310px;
   margin-left: auto;
@@ -382,6 +470,14 @@ header {
     padding-right: 14px;
   }
 }
+.w-full {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
 .border-white {
   border-bottom: 1px solid #fff;
 }
@@ -410,6 +506,10 @@ header {
   display: none;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .position-r {
   position: relative;
 }
@@ -420,6 +520,10 @@ header {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .justify-center {
@@ -434,14 +538,6 @@ header {
   align-items: center;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.font-roboto {
-  font-family: Roboto;
-}
-
 .fs-4 {
   font-size: 1rem;
 }
@@ -450,20 +546,64 @@ header {
   font-size: 1.25rem;
 }
 
+.fs-6 {
+  font-size: 1.5rem;
+}
+
+.fs-7 {
+  font-size: 1.75rem;
+}
+
+.fs-8 {
+  font-size: 2rem;
+}
+
 .fs-9 {
   font-size: 2.25rem;
+}
+
+.fs-10 {
+  font-size: 2.5rem;
+}
+
+.fs-11 {
+  font-size: 2.75rem;
 }
 
 .fs-12 {
   font-size: 3rem;
 }
 
+.fs-13 {
+  font-size: 3.25rem;
+}
+
+.fs-14 {
+  font-size: 3.5rem;
+}
+
+.fs-15 {
+  font-size: 3.75rem;
+}
+
 .fs-16 {
   font-size: 4rem;
 }
 
+.fs-10-2px {
+  font-size: calc(2.5rem + 2px);
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
 .fw-700 {
   font-weight: 700;
+}
+
+.font-roboto {
+  font-family: Roboto;
 }
 
 .mx-a {
@@ -479,12 +619,20 @@ header {
   margin-bottom: 1.5rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .mb-9 {
   margin-bottom: 2rem;
 }
 
 .mb-12 {
   margin-bottom: 3rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .p-4 {
@@ -524,12 +672,8 @@ header {
   padding-top: 5rem;
 }
 
-.gap-16 {
-  gap: 4rem;
-}
-
-.gap-12 {
-  gap: 3rem;
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-6 {
@@ -538,6 +682,14 @@ header {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-16 {
+  gap: 4rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -549,6 +701,9 @@ header {
   }
   .mb-md-6 {
     margin-bottom: 1.5rem;
+  }
+  .fs-md-6 {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 767px) {
