@@ -5,18 +5,25 @@
   padding-left: 12px;
   padding-right: 12px;
 }
-@media screen and (max-width:992px) {
+@include media (992px) {
     .container{
         padding-left:36px;
         padding-right: 36px;
     }
 }
-@media screen and (max-width:767px){
+@include media (767px){
     .container{
         padding-left: 13px;
         padding-right: 14px;
     }
 }
+.w-full{
+    width: 100%;
+}
+.w-50{
+    width: 50%;
+}
+//color
 .border-white{
   border-bottom: 1px solid #fff;
 }
@@ -29,24 +36,30 @@
 .text-white{
     color: #fff;
 }
-
 .text-primary{
     color: $primary;
 }
 .text-primary-dark{
     color:$primary-dark;
 }
+//display
 .d-none{
     display: none;
 }
+.text-center{
+    text-align: center;
+}
 .position-r{
-position: relative;
+    position: relative;
 }
 .flex{
   display: flex;
 }
 .flex-wrap{
     flex-wrap: wrap;
+}
+.flex-1{
+    flex:1 1 0%;
 }
 .justify-center{
   justify-content: center;
@@ -57,30 +70,26 @@ position: relative;
 .items-center{
   align-items: center;
 }
-.text-center{
-text-align: center;
+
+//font
+@for $i from 4 through 16 {
+    .fs-#{$i}{
+        font-size: $i*0.25rem;
+    }
 }
-.font-roboto{
-    font-family: Roboto;
+.fs-10-2px{
+    font-size: calc(2.5rem + 2px);
 }
-.fs-4{
-  font-size: 1rem;
-}
-.fs-5{
-  font-size: 1.25rem;
-}
-.fs-9{
-  font-size: 2.25rem;
-}
-.fs-12{
-    font-size: 3rem;
-}
-.fs-16{
-    font-size: 4rem;
+.fw-500{
+    font-weight: 500;
 }
 .fw-700{
     font-weight: 700;
 }
+.font-roboto{
+    font-family: Roboto;
+}
+//space
 .mx-a{
     margin-right: auto;
     margin-left: auto;
@@ -91,11 +100,17 @@ text-align: center;
 .mb-6{
     margin-bottom: 1.5rem;
 }
+.mb-8{
+    margin-bottom: 2rem;
+}
 .mb-9{
   margin-bottom: 2rem;
 }
 .mb-12{
     margin-bottom: 3rem;
+}
+.mb-20{
+    margin-bottom: 5rem;
 }
 .p-4{
     padding: 1rem;
@@ -126,11 +141,9 @@ text-align: center;
     padding-bottom: 5rem;
     padding-top: 5rem;
 }
-.gap-16{
-  gap:4rem;  
-}
-.gap-12{
-  gap:3rem;
+
+.gap-2{
+    gap:0.5rem;
 }
 .gap-6{
   gap:1.5rem
@@ -138,7 +151,13 @@ text-align: center;
 .gap-8{
   gap:2rem;
 }
-@media screen and (max-width:992px){
+.gap-12{
+  gap:3rem;
+}
+.gap-16{
+  gap:4rem;  
+}
+@include media (992px){
     .d-md-block{
         display: block;
     }
@@ -148,10 +167,12 @@ text-align: center;
     .mb-md-6{
         margin-bottom: 1.5rem;
     }
-
+    .fs-md-6{
+        font-size: 1.5rem;
+    }
 }
 
-@media screen and (max-width:767px){
+@include media (767px){
     .d-sm-block{
         display: block;
     }

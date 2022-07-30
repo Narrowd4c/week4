@@ -1,0 +1,88 @@
+.navbar li{
+    flex:1 1 0px;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    border-right: 1px solid #DCDCDC;
+    border-bottom: 0.5rem solid transparent;
+    cursor: pointer;
+    &:first-child{
+        border-left: 1px solid #DCDCDC;
+    }
+    a{
+        text-decoration: none;
+    }
+    &:hover{
+        border-bottom: 0.5rem solid $primary;   
+    }
+}
+.glass-card{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    margin-right: -12px;
+    margin-left: -12px;
+    justify-content: center;
+    li{
+        width:calc(25% - 1.5rem);
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-bottom: 5rem;
+    } 
+}
+@include media (992px){
+    .glass-card{
+        gap:2.5rem 1.5rem;
+    li{
+        width:calc(50% - 1.5rem);
+        margin-bottom: 2.5rem;
+    } 
+    }
+}
+@include media (767px){
+    .glass-card{
+        margin-top: 1.5rem;
+        margin-bottom: 4rem;
+    li{
+        gap:none;
+        width: 100%;
+        max-width: 638px;
+    } 
+    }
+}
+.color-select{
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+.glass-color1{
+    background: $glass-color1;
+}
+.glass-color2{
+    background: $glass-color2;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    li a{
+       display: block;
+        padding: 10px 11px 10px;
+        font-size: 19px;
+        line-height: 26px;
+        border: 1px solid $gray;
+        &:not(:first-child){
+            border-right: 0px;
+        }
+        &:hover{
+            text-decoration: none;
+            background: $pagination-color;
+        }
+    }
+    .page a{
+        padding: 11px 15px 11px 15px;
+        font-size:18px;
+        line-height: 24px;
+        &:hover{
+            color: white;
+            background: #000;
+        }
+    }
+}
