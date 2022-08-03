@@ -6,16 +6,7 @@
 .menu{
   display: none;
 }
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 500,
-  'GRAD' 0,
-  'opsz' 48;
-  font-size: 40px;
-  vertical-align:sub;
-  margin-right: 20px;
-}
+
 .social-icon_list>li{
   width: 48px;
 }
@@ -25,7 +16,7 @@
 
 
 
-@media screen and (max-width:767px){
+@include media (767px){
   .material-symbols-outlined {
   font-size: 1.25rem;
   vertical-align:sub;

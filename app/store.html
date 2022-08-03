@@ -1,0 +1,70 @@
+---
+layout: ./app/layout.ejs
+engine: ejs
+title: 首頁
+---
+<main class="container pt-24 pt-md-20 pt-sm-10">
+    <h1 class="fs-12 fw-700 border-red pl-4 mb-8 mb-sm-6">門市據點</h1>
+    <label for="選擇地區" class="fs-6 ">選擇地區</label>
+    <select name="選擇地區" id="選擇地區" class="ml-7 mb-10">
+        <option value="台北市">台北市</option>
+        <option value="台中市">台中市</option>
+        <option value="高雄市">高雄市</option>
+    </select>
+    
+    <section>
+        <ul class="store_list flex flex-wrap -mx-3 gap-y-12 mb-20 gap-y-md-6">
+            <li class="store_card">
+                <img src="./assets/images/store-1.png" alt="">
+                <h2 class="store_card-title">台北中山旗艦店</h2>
+                <ul class="store_card-contact">
+                    <li><span class="material-symbols-outlined ">call</span>電話：(02)000-1234</li>
+                    <li><span class="material-symbols-outlined ">schedule</span>營業時間：10:00-21:00</li>
+                    <li><span class="material-symbols-outlined ">location_on</span>地址：台北市中山區南京東路25巷2-1號</li>
+                </ul>
+                <button class="store_card-btn">詳細資訊</button>
+            </li>
+             <li class="store_card">
+                <img src="./assets/images/store-2.png" alt="">
+                <h2 class="store_card-title">台北綠園店</h2>
+                <ul class="store_card-contact">
+                    <li><span class="material-symbols-outlined ">call</span>電話：(02)000-2345</li>
+                    <li><span class="material-symbols-outlined ">schedule</span>營業時間：10:00-21:00</li>
+                    <li><span class="material-symbols-outlined ">location_on</span>地址：台北市中正區復興南路 132-1 號</li>
+                </ul>
+                <button class="store_card-btn">詳細資訊</button>
+            </li>
+             <li class="store_card">
+                <img src="./assets/images/store-3.png" alt="">
+                <h2 class="store_card-title">台中清水旗艦店</h2>
+                <ul class="store_card-contact">
+                    <li><span class="material-symbols-outlined ">call</span>電話：(02)000-1234</li>
+                    <li><span class="material-symbols-outlined ">schedule</span>營業時間：10:00-21:00</li>
+                    <li><span class="material-symbols-outlined ">location_on</span>地址：台中市清水區經南一路 23 號 8 樓</li>
+                </ul>
+                <button class="store_card-btn">詳細資訊</button>
+            </li>
+             <li class="store_card">
+                <img src="./assets/images/store-4.png" alt="">
+                <h2 class="store_card-title">高雄中正形象店</h2>
+                <ul class="store_card-contact">
+                    <li><span class="material-symbols-outlined ">call</span>電話：(07)000-2345</li>
+                    <li><span class="material-symbols-outlined ">schedule</span>營業時間：10:00-21:00</li>
+                    <li><span class="material-symbols-outlined ">location_on</span>地址：高雄市苓雅區中正路 38 號 12 樓</li>
+                </ul>
+                <button class="store_card-btn">詳細資訊</button>
+            </li>
+             <li class="store_card">
+                <img src="./assets/images/store-5.png" alt="">
+                <h2 class="store_card-title">高雄夢時代店</h2>
+                <ul class="store_card-contact">
+                    <li><span class="material-symbols-outlined ">call</span>電話：(02)000-1234</li>
+                    <li><span class="material-symbols-outlined ">schedule</span>營業時間：10:00-21:00</li>
+                    <li><span class="material-symbols-outlined ">location_on</span>地址：高雄市前鎮區中華一路 63 號 6 樓</li>
+                </ul>
+                <button class="store_card-btn">詳細資訊</button>
+            </li>
+             
+        </ul>
+    </section>
+</main>
