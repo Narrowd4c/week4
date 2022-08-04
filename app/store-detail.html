@@ -1,0 +1,31 @@
+---
+layout: ./app/layout.ejs
+engine: ejs
+title: 系列鏡框
+---
+<main class="container pt-24 pt-md-20 pt-sm-10 mb-20 mb-sm-16">
+    <h1 class="page-title pl-4 mb-8 mb-sm-6">門市據點</h1>
+    <label for="選擇分店" class="fs-6 fs-sm-4">選擇分店
+    <select name="選擇分店" id="選擇分店" class="w-full">
+        <option value="台北市中山旗艦店">台北市中山旗艦店</option>
+        <option value="台中市">台中市</option>
+        <option value="高雄市">高雄市</option>
+    </select>
+    </label>
+    <section class="mt-10 mt-sm-6">
+        <div class="store_list flex flex-md-col gap-6">
+            <div class="store_card storepage d-md-flex d-sm-block gap-6">
+                <img src="./assets/images/storepage-1.png" alt="store-detail">
+                <div class="">
+                <h2 class="store_card-title">台北中山旗艦店</h2>
+                <ul class="store_card-contact">
+                    <li><span class="material-symbols-outlined ">call</span>電話：(02)000-1234</li>
+                    <li><span class="material-symbols-outlined ">schedule</span>營業時間：10:00-21:00</li>
+                    <li><span class="material-symbols-outlined ">location_on</span>地址：台北市中山區南京東路25巷2-1號</li>
+                </ul>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1600.8639907581196!2d121.52581315929383!3d25.052254483094984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a95cd25faacd%3A0x3c2fa3b76cc3449a!2z6bql55W25YueIOael-ajruS4gOW6lw!5e0!3m2!1szh-TW!2stw!4v1659598546337!5m2!1szh-TW!2stw" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+</main>

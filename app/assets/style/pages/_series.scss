@@ -65,30 +65,3 @@
 .glass-color2{
     background: $glass-color2;
 }
-.pagination {
-    display: flex;
-    justify-content: center;
-    li a{
-       display: block;
-        padding: 10px 11px 10px;
-        font-size: 19px;
-        line-height: 26px;
-        border: 1px solid $gray;
-        &:not(:first-child){
-            border-right: 0px;
-        }
-        &:hover{
-            text-decoration: none;
-            background: $pagination-color;
-        }
-    }
-    .page a{
-        padding: 11px 15px 11px 15px;
-        font-size:18px;
-        line-height: 24px;
-        &:hover{
-            color: white;
-            background: #000;
-        }
-    }
-}
