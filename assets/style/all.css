@@ -454,6 +454,10 @@ button {
   padding-top: 5rem;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1121,6 +1125,9 @@ select {
 .blog_main article p {
   color: #555555;
 }
+.blog_main a p:hover {
+  text-decoration: underline;
+}
 
 .blog-share {
   border-bottom: 1px solid #000;
@@ -1137,6 +1144,11 @@ select {
   font-weight: 700;
   vertical-align: sub;
   margin-right: 0.75em;
+}
+
+.hover a:hover {
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .blog_tag {
