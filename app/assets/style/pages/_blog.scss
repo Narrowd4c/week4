@@ -100,12 +100,15 @@
      }
 }
 
-////
+////blog-article.html
 
 .blog_main{
     max-width: 856px;
     article p{
         color: #555555;
+    }
+     a p:hover{
+        text-decoration: underline;
     }
 }
 
@@ -124,9 +127,15 @@
     vertical-align:sub;
     margin-right: 0.75em;
 }
-
+.hover{
+    a:hover{
+        font-weight: 700;
+        text-decoration: underline;
+    }
+}
 .blog_tag{
     max-width: 256px;
+
 }
 .tag_list{
     gap:0.25rem 1.5rem;
