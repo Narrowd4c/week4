@@ -395,11 +395,11 @@ button {
   padding-left: 0.75rem;
 }
 
-.ul-px-3 {
+.space-x-3 {
   margin-left: -0.75rem;
   margin-right: -0.75rem;
 }
-.ul-px-3 > * {
+.space-x-3 > * {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
