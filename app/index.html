@@ -15,7 +15,7 @@ title: 眼鏡官網
 <main class="bg-white-smoke py-20">
     <div class="container text-primary-dark ">
         <h2 class="title mb-6 ">用專業的心，做專業的事</h2>
-        <ul class="flex flex-wrap gap-6">
+        <ul class="flex flex-wrap -mx-3 ul-px-3 gap-md-y-6">
             <li class="feature-item">
                 <img src="./assets/images/home-section2-1.png" alt="price">
                 <h3>單一價格</h3>
@@ -65,25 +65,25 @@ title: 眼鏡官網
             <li class="co-branding-item mb-md-6">
                 <img class="d-sm-none" src="./assets/images/home-section4-1.png" alt="doouble a+">
                 <img class="d-none d-sm-block" src="./assets/images/home-section4-1-sm.png" alt="doouble a+">
-                <p>DOUBLE A+</p>
+                <h3>DOUBLE A+</h3>
             </li>
             <li class="co-branding-item">
                 <img class="d-sm-none" src="./assets/images/home-section4-2.png" alt="youth">
                 <img class="d-none d-sm-block" src="./assets/images/home-section4-2-sm.png" alt="youth">
-                <p>YOUTH</p>
+                <h3>YOUTH</h3>
             </li>
         </ul>
     </div>
 </section>
 <section class="container py-20">
     <h2 class="title text-primary-dark mb-6">顧客推薦</h2>
-    <ul class="flex flex-wrap gap-6">
+    <ul class="flex flex-wrap gap-6 -mx-3 justify-center">
         <li class="customer">
             <img src="./assets/images/home-section5-1.png" alt="customer">
             <div class="customer-card">
             <p class="name">Jessy</p>
             <p>眼鏡品質優良，下次還會想來這邊購買！</p>
-            <p class="date">2021/06/20</p>
+            <time class="date">2021/06/20</time>
             </div>
         </li>
         <li class="customer">
@@ -91,7 +91,7 @@ title: 眼鏡官網
             <div class="customer-card">
             <p class="name">凱倫</p>
             <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
-            <p class="date">2021/04/18</p>
+            <time class="date">2021/04/18</time>
             </div>
         </li>
         <li class="customer">
@@ -99,7 +99,7 @@ title: 眼鏡官網
             <div class="customer-card">
             <p class="name">悠悠</p>
             <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
-            <p class="date">2020/12/25</p>
+            <time class="date">2020/12/25</time>
             </div>
         </li>
         <li class="customer">
@@ -107,7 +107,7 @@ title: 眼鏡官網
             <div class="customer-card">
             <p class="name">Kyuan</p>
             <p>服務很好，品質沒有任何問題，非常喜歡。</p>
-            <p class="date">2020/10/31</p>
+            <time class="date">2020/10/31</time>
             </div>
         </li>
     </ul>
@@ -117,17 +117,15 @@ title: 眼鏡官網
     <h2 class="title text-primary-dark mb-12 ">聯絡我們</h2>
     <p class="fs-5 mb-6">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
     <form>
-        <label >姓名<input name="name" type="text" placeholder="陳小明"></label>
-        <label >聯絡電話<input type="text" placeholder="0912-345-678"></label>
-        <label >電子郵件<input type="text" placeholder="example@email.com"></label>
-        <label >意見反應<textarea placeholder="請輸入您的意見" cols="30" rows="5"></textarea></label>
-        <label class="flex items-center mb-12">
-        <input type="checkbox" value="agree" />
-        我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
-        </label>
-        <label >
-            <input type="button" value="確認送出" class="text-white py-4 mx-a fs-4 bg-primary fw-700">
-        </label>
+        <label for="name">姓名</label><input id="name" name="name" type="text" placeholder="陳小明" required>
+        <label for="tel">聯絡電話</label><input id="tel" type="tel" placeholder="0912-345-678" required>
+        <label for="email">電子郵件</label><input id="email" type="email" placeholder="example@email.com" required>
+        <label for="feedback">意見反應</label><textarea id="feedback" placeholder="請輸入您的意見" cols="30" rows="5"></textarea>
+        <p class="flex mb-12">
+            <input  type="checkbox" id="agree" value="agree" name="check" required/>
+            <label  for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+        </p>
+        <input type="button" value="確認送出" class="text-white py-4 mx-a fs-4 bg-primary fw-700">
     </form>
     </div>
 </section>

@@ -1,6 +1,7 @@
 header,footer {
   a:hover{
     text-decoration: underline;
+     opacity: 0.75;
   }
 }
 .logo{
@@ -12,7 +13,7 @@ header,footer {
   display: none;
 }
 
-.social-icon_list>li{
+.social-icon_list img{
   width: 48px;
 }
 .copyright{
@@ -69,6 +70,7 @@ header,footer {
 }
 .social-icon_list>li{
    width: 24px;
+  
   }
 .copyright{
     font-size:1rem;
